@@ -1,0 +1,416 @@
+
+/* =========================================
+   CAMPUS WASTE MANAGEMENT SYSTEM
+   Main CSS Design
+   ========================================= */
+
+
+/* 1. Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 2. Set the general appearance of the webpage */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f2;
+    color: #26352b;
+}
+
+
+/* 3. Main dashboard layout */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   4. LEFT SIDEBAR DESIGN
+   ========================================= */
+
+.sidebar {
+    width: 260px;
+    background: linear-gradient(180deg, #08783d, #064d2d);
+    color: white;
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* System logo and title */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+
+/* Recycling symbol */
+.logo-icon {
+    font-size: 38px;
+}
+
+
+/* System name */
+.logo h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #d1ead9;
+}
+
+
+/* Navigation menu */
+.navigation {
+    margin-top: 30px;
+}
+
+
+/* Individual navigation links */
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    color: white;
+    text-decoration: none;
+
+    padding: 15px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+/* Navigation icons */
+.nav-link span {
+    font-size: 22px;
+}
+
+
+/* Highlight when a menu item is selected */
+.nav-link.active {
+    background-color: #20a34f;
+    font-weight: bold;
+}
+
+
+/* Hover effect when the mouse moves over a link */
+.nav-link:hover {
+    background-color: #159447;
+}
+
+
+/* Sidebar footer */
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: 25px;
+    color: #d1ead9;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   5. MAIN CONTENT AREA
+   ========================================= */
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    min-width: 0;
+}
+
+
+/* =========================================
+   6. WELCOME HEADER
+   ========================================= */
+
+.welcome-header {
+    min-height: 210px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(100deg, #e5f5e9, #ffffff);
+
+    border-radius: 18px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+
+/* Welcome heading and description */
+.welcome-text {
+    padding: 35px;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-text h1 {
+    color: #075c32;
+    font-size: 29px;
+    margin-bottom: 15px;
+}
+
+.welcome-text p {
+    font-size: 16px;
+    color: #52675a;
+    line-height: 1.6;
+}
+
+
+
+/* University building image container */
+.campus-image {
+    width: 38%;
+    height: 210px;
+
+    /* Centers the photograph inside its container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Light background around the photograph */
+    background-color: #e5f5e9;
+}
+
+/* Displays the complete university photograph */
+.campus-image img {
+    width: 100%;
+    height: 100%;
+
+    /* Shows the entire image without cropping */
+    object-fit: contain;
+
+    /* Keeps the image centered */
+    object-position: center;
+}
+
+
+
+/* =========================================
+   7. MAIN CONTENT PANEL
+   ========================================= */
+
+.content-panel {
+    background-color: white;
+    border-radius: 18px;
+    padding: 30px;
+    min-height: 350px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+
+/* Section heading */
+.section-heading {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5eee7;
+}
+
+.section-heading h2 {
+    color: #174b2c;
+    font-size: 23px;
+}
+
+
+/* Welcome message */
+.welcome-message {
+    background-color: #f0f8f2;
+    padding: 30px;
+    border-radius: 12px;
+    line-height: 1.8;
+}
+
+.welcome-message h3 {
+    color: #08783d;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.welcome-message p {
+    color: #52675a;
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   8. RESPONSIVE DESIGN
+   Makes the dashboard fit smaller screens
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .sidebar {
+        width: 210px;
+        padding: 20px 12px;
+    }
+
+    .main-content {
+        padding: 18px;
+    }
+
+    .welcome-text h1 {
+        font-size: 22px;
+    }
+
+    .campus-image {
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    /* Stack the sidebar and main content */
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .navigation {
+        margin-top: 15px;
+    }
+
+    .welcome-header {
+        flex-direction: column;
+    }
+
+    .campus-image {
+        width: 100%;
+    }
+
+    .welcome-text {
+        padding: 25px;
+    }
+
+    .content-panel {
+        padding: 20px;
+    }
+}
+
+
+/* ==========================================
+   USERS MANAGEMENT TABLE DESIGN
+   ========================================== */
+
+/* Organizes the users page heading and button */
+.management-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.management-header h3 {
+    color: #08783d;
+    margin-bottom: 8px;
+}
+
+.management-header p {
+    color: #52675a;
+}
+
+
+/* Professional green Add User button */
+.primary-btn {
+    background-color: #08783d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background-color: #064d2d;
+}
+
+
+/* Allows the table to scroll on smaller screens */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+
+/* Styles the users table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+
+/* Table headings */
+thead {
+    background-color: #08783d;
+    color: white;
+}
+
+th {
+    padding: 15px;
+    white-space: nowrap;
+}
+
+
+/* Table data cells */
+td {
+    padding: 14px 15px;
+    border-bottom: 1px solid #e0ebe3;
+    white-space: nowrap;
+}
+
+
+/* Alternating table row colours */
+tbody tr:nth-child(even) {
+    background-color: #f0f8f2;
+}
+
+
+/* Highlight a row when the mouse moves over it */
+tbody tr:hover {
+    background-color: #e0f1e5;
+}
+
+
+/* Responsive table adjustments */
+@media (max-width: 600px) {
+
+    .management-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .primary-btn {
+        width: 100%;
+    }
+
+}

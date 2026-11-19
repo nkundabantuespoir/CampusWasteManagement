@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Defines the character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on different screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Name displayed on the browser tab -->
+    <title>Campus Waste Management System</title>
+
+    <!-- Connects the HTML page to our CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main container for the entire dashboard -->
+    <div class="dashboard-container">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+
+            <!-- System logo and name -->
+            <div class="logo">
+                <div class="logo-icon">♻</div>
+
+                <div>
+                    <h2>Campus Waste</h2>
+                    <p>Management System</p>
+                </div>
+            </div>
+
+            <!-- Navigation menu -->
+            <nav class="navigation">
+
+               
+<!-- Sidebar navigation menu -->
+<nav class="navigation">
+
+    <!-- Dashboard page -->
+    <a href="#" class="nav-link active" data-page="dashboard">
+        <span>⌂</span> Dashboard
+    </a>
+
+    <!-- Users management page -->
+    <a href="#" class="nav-link" data-page="users">
+        <span>♙</span> Users
+    </a>
+
+    <!-- Campus locations page -->
+    <a href="#" class="nav-link" data-page="locations">
+        <span>⌖</span> Locations
+    </a>
+
+    <!-- Collection schedules page -->
+    <a href="#" class="nav-link" data-page="schedules">
+        <span>▦</span> Collection Schedules
+    </a>
+
+    <!-- Waste reports page -->
+    <a href="#" class="nav-link" data-page="reports">
+        <span>▤</span> Waste Reports
+    </a>
+
+</nav>
+
+
+            </nav>
+
+            <!-- Sidebar footer -->
+            <div class="sidebar-footer">
+                <p>Campus Sustainability</p>
+                <small>Waste Management System</small>
+            </div>
+
+        </aside>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+
+            <!-- Welcome header -->
+            <header class="welcome-header">
+
+                <div class="welcome-text">
+                    <h1>Campus Waste Management System</h1>
+
+                    <p>
+                        A simple system to manage campus waste effectively.
+                    </p>
+                </div>
+
+                <!-- University building image will appear here -->
+                <div class="campus-image">
+                    <img src="campus.jpg"
+                         alt="University campus building">
+                </div>
+
+            </header>
+
+            <!-- Main management workspace -->
+            <section class="content-panel">
+
+                <!-- Page heading -->
+                <div class="section-heading">
+                    <h2 id="pageTitle">Welcome to the Dashboard</h2>
+                </div>
+
+                <!-- Dashboard introduction -->
+                <div class="welcome-message">
+
+                    <h3>Welcome to Campus Waste Management</h3>
+
+                    <p>
+                        This system helps manage campus users,
+                        locations, waste collection schedules
+                        and waste reports in one place.
+                    </p>
+
+                    <p>
+                        Use the navigation menu on the left
+                        to access the different management sections.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Connects our HTML page to JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
