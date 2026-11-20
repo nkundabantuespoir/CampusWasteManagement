@@ -273,7 +273,7 @@ async function loadUsers() {
 
         // Send a GET request to the backend
         const response = await fetch(
-            "http://localhost:5000/api/users"
+            "https://campus-waste-management-api-bro7.onrender.com/api/users"
         );
 
         // Check whether the request was successful
@@ -355,7 +355,7 @@ deleteButton.addEventListener("click", async function() {
 
         // Send the DELETE request to our backend
         const response = await fetch(
-            `http://localhost:5000/api/users/${user._id}`,
+            `https://campus-waste-management-api-bro7.onrender.com/api/users/${user._id}`,
             {
                 method: "DELETE"
             }
@@ -409,7 +409,7 @@ deleteButton.addEventListener("click", async function() {
 
         // Send a DELETE request to the backend
         const response = await fetch(
-            `http://localhost:5000/api/users/${user._id}`,
+            `https://campus-waste-management-api-bro7.onrender.com/api/users/${user._id}`,
             {
                 method: "DELETE"
             }
@@ -497,7 +497,7 @@ async function loadLocations() {
 
         // Send a GET request to retrieve locations from MongoDB
         const response = await fetch(
-            "http://localhost:5000/api/locations"
+            "https://campus-waste-management-api-bro7.onrender.com/api/locations"
         );
 
         // Check whether the request was successful
@@ -594,7 +594,7 @@ deleteButton.addEventListener("click", async function() {
 
         // Send a DELETE request to the backend
         const response = await fetch(
-            `http://localhost:5000/api/locations/${location._id}`,
+            `https://campus-waste-management-api-bro7.onrender.com/api/locations/${location._id}`,
             {
                 method: "DELETE"
             }
@@ -689,7 +689,7 @@ async function loadSchedules() {
 
         // Request all schedules from the backend
         const response = await fetch(
-            "http://localhost:5000/api/schedules"
+            "https://campus-waste-management-api-bro7.onrender.com/api/schedules"
         );
 
         // Check whether the request was successful
@@ -800,7 +800,7 @@ deleteButton.addEventListener("click", async function() {
 
         // Send DELETE request to MongoDB backend
         const response = await fetch(
-            `http://localhost:5000/api/schedules/${schedule._id}`,
+            `https://campus-waste-management-api-bro7.onrender.com/api/schedules/${schedule._id}`,
             {
                 method: "DELETE"
             }
@@ -878,7 +878,7 @@ async function loadReports() {
 
         // Retrieve reports from MongoDB
         const response = await fetch(
-            "http://localhost:5000/api/reports"
+            "https://campus-waste-management-api-bro7.onrender.com/api/reports"
         );
 
         if (!response.ok) {
@@ -961,7 +961,7 @@ async function loadReports() {
                 try {
 
                     const response = await fetch(
-`http://localhost:5000/api/reports/${report._id}`,                        {
+`https://campus-waste-management-api-bro7.onrender.com/api/reports/${report._id}`,                        {
                             method: "DELETE"
                         }
                     );
@@ -1140,7 +1140,7 @@ function showAddScheduleForm() {
 
             // Send the new schedule to the backend
             const response = await fetch(
-                "http://localhost:5000/api/schedules",
+                "https://campus-waste-management-api-bro7.onrender.com/api/schedules",
                 {
                     method: "POST",
 
@@ -1314,7 +1314,7 @@ function showEditScheduleForm(schedule) {
 
             // Send the updated schedule to the backend
             const response = await fetch(
-                `http://localhost:5000/api/schedules/${schedule._id}`,
+                `https://campus-waste-management-api-bro7.onrender.com/api/schedules/${schedule._id}`,
                 {
                     method: "PUT",
 
@@ -1442,7 +1442,7 @@ function showAddReportForm() {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/reports",
+                "https://campus-waste-management-api-bro7.onrender.com/api/reports",
                 {
                     method: "POST",
                     headers: {
@@ -1572,7 +1572,7 @@ function showEditReportForm(report) {
         try {
 
             const response = await fetch(
-                `http://localhost:5000/api/reports/${report._id}`,
+                `https://campus-waste-management-api-bro7.onrender.com/api/reports/${report._id}`,
                 {
                     method: "PUT",
                     headers: {
@@ -1690,7 +1690,7 @@ function showAddLocationForm() {
 
             // Send the new location to the backend
             const response = await fetch(
-                "http://localhost:5000/api/locations",
+                "https://campus-waste-management-api-bro7.onrender.com/api/locations",
                 {
                     method: "POST",
 
@@ -1833,7 +1833,7 @@ function showEditLocationForm(location) {
 
             // Send the updated information to MongoDB through Express
             const response = await fetch(
-                `http://localhost:5000/api/locations/${location._id}`,
+                `https://campus-waste-management-api-bro7.onrender.com/api/locations/${location._id}`,
                 {
                     method: "PUT",
 
@@ -1956,7 +1956,7 @@ function showAddUserForm() {
 
             // Send the new user information to the backend
             const response = await fetch(
-                "http://localhost:5000/api/users",
+                "https://campus-waste-management-api-bro7.onrender.com/api/users",
                 {
                     method: "POST",
 
@@ -2084,7 +2084,7 @@ function showEditUserForm(user) {
 
             // Send updated information to the backend
             const response = await fetch(
-                `http://localhost:5000/api/users/${user._id}`,
+                `https://campus-waste-management-api-bro7.onrender.com/api/users/${user._id}`,
                 {
                     method: "PUT",
 
